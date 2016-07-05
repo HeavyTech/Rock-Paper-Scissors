@@ -51,6 +51,24 @@
                                     <action selector="playRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qvv-Ln-xbU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q7-hB-4rE">
+                                <rect key="frame" x="73.5" y="199" width="153" height="102"/>
+                                <state key="normal" title="Spock" image="spock">
+                                    <color key="titleColor" red="1" green="0.9840436531272102" blue="0.018353925728493259" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSpock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQP-dK-8T8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-SD-K5h">
+                                <rect key="frame" x="388" y="213" width="73" height="23"/>
+                                <state key="normal" title="Lizard" image="lizard">
+                                    <color key="titleColor" red="1" green="0.98404365309999997" blue="0.018353925730000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playLizard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ISB-kn-byz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.11387811555381799" blue="0.011272634131824888" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -59,20 +77,24 @@
                             <constraint firstItem="gmv-FR-01E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="9zf-qI-PCo"/>
                             <constraint firstItem="UQI-Gv-SU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D5d-zW-csT"/>
                             <constraint firstItem="hS5-io-DKe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-150" id="NVB-Ln-BrB"/>
+                            <constraint firstItem="5q7-hB-4rE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="cz3-My-FCy"/>
                             <constraint firstItem="gmv-FR-01E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eI6-qd-dpG"/>
+                            <constraint firstItem="5q7-hB-4rE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-150" id="lOK-EV-DV3"/>
+                            <constraint firstItem="Urr-SD-K5h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="125" id="u8k-6e-0kI"/>
                             <constraint firstItem="hS5-io-DKe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="vc1-xA-zs6"/>
                             <constraint firstItem="MEF-US-q3X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="150" id="vdW-hi-XQ1"/>
+                            <constraint firstItem="Urr-SD-K5h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-75" id="wCa-4M-1RX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="305"/>
+            <point key="canvasLocation" x="170" y="300"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="A2q-V5-mr4">
             <objects>
-                <viewController id="Yfl-16-7rf" customClass="ResultViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="Yfl-16-7rf" customClass="ResultViewController" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sDz-Un-zu6"/>
                         <viewControllerLayoutGuide type="bottom" id="DxA-d0-bXC"/>
@@ -84,7 +106,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5j-Q6-7DA">
                                 <rect key="frame" x="254" y="290" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnE-PF-9Lh">
@@ -132,8 +154,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lizard" width="23" height="23"/>
         <image name="paper" width="37" height="32"/>
         <image name="rock" width="37" height="32"/>
         <image name="scissors" width="37" height="32"/>
+        <image name="spock" width="102" height="102"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
 		820700B71D275CD7005BFAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820700B51D275CD7005BFAC5 /* LaunchScreen.storyboard */; };
 		820700C21D275CD8005BFAC5 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820700C11D275CD8005BFAC5 /* Rock_Paper_ScissorsTests.swift */; };
 		820700CD1D275CD8005BFAC5 /* Rock_Paper_ScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820700CC1D275CD8005BFAC5 /* Rock_Paper_ScissorsUITests.swift */; };
+		8215658C1D278F4F000B3CF0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8215658B1D278F4F000B3CF0 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		820700C81D275CD8005BFAC5 /* Rock Paper ScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock Paper ScissorsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		820700CC1D275CD8005BFAC5 /* Rock_Paper_ScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsUITests.swift; sourceTree = "<group>"; };
 		820700CE1D275CD8005BFAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8215658B1D278F4F000B3CF0 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				820700AC1D275CD7005BFAC5 /* AppDelegate.swift */,
 				820700AE1D275CD7005BFAC5 /* ViewController.swift */,
 				820700B01D275CD7005BFAC5 /* Main.storyboard */,
+				8215658B1D278F4F000B3CF0 /* ResultViewController.swift */,
 				820700B31D275CD7005BFAC5 /* Assets.xcassets */,
 				820700B51D275CD7005BFAC5 /* LaunchScreen.storyboard */,
 				820700B81D275CD7005BFAC5 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				820700AF1D275CD7005BFAC5 /* ViewController.swift in Sources */,
 				820700AD1D275CD7005BFAC5 /* AppDelegate.swift in Sources */,
+				8215658C1D278F4F000B3CF0 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				820700D31D275CD8005BFAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		820700D41D275CD8005BFAC5 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				820700D61D275CD8005BFAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		820700D71D275CD8005BFAC5 /* Build configuration list for PBXNativeTarget "Rock Paper ScissorsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				820700D91D275CD8005BFAC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

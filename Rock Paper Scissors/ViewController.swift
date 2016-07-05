@@ -12,28 +12,38 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func playRock(sender: UIButton) {
         print("Rock was pressed")
-        
-        
-        performSegueWithIdentifier("play", sender: sender)
-        
-        
-//        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
-//        controller.userChoice = getUserShape(sender)
-//        
-//        presentViewController(controller, animated: true, completion: nil)
-        
-        
 
+        
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        controller.userChoice = getUserShape(sender)
+        
+        presentViewController(controller, animated: true, completion: nil)
+
+    }
+    
+    
+    @IBAction func playSpock(sender: UIButton) {
+        
+        let controller = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        controller.userChoice = getUserShape(sender)
+        presentViewController(controller, animated: true, completion: nil)
+        
+        
+    }
+    
+    
+    @IBAction func playLizard(sender: UIButton) {
+         performSegueWithIdentifier("play", sender: sender)
+        
     }
 
     @IBAction func playPaper(sender: UIButton) {
